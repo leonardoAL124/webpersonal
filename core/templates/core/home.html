@@ -1,0 +1,14 @@
+<!-- Heredendo del template padre -->
+{% extends "core/base.html" %}
+
+{% block title %}Inicio{% endblock  %}
+
+<!--Para cargar archivos estáticos siempre se usa:-->
+{% load static %}
+
+<!--Imágen cabecera-->
+{% block background %}{% static 'core/img/home-bg.jpg' %}{% endblock  %}
+
+<!--Titulo y descripción-->
+{% block header_h1 %}Anthony Luzon{% endblock  %}
+{% block header_subheading %}Desarrollador de Software{% endblock  %}
